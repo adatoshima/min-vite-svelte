@@ -2,6 +2,10 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
+
+  function a11ywarning() {
+    console.log('clicked');
+  }
 </script>
 
 <main>
@@ -25,6 +29,11 @@
 
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
+  </p>
+  
+  <!-- test if a11y warning is disabled -->
+  <p onclick={a11ywarning}>
+    a11y warning test
   </p>
 </main>
 
